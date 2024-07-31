@@ -2,7 +2,7 @@
 
 A decimal-to-binary visual converter.
 
-This application was developed as the capstone project for the Programming for Mobile Devices course in the São Paulo Federal Institute's Jacareí campus' Systems Analysis and Development undegraduation program.
+This application was developed as the capstone project for the Programming for Mobile Devices course in the São Paulo Federal Institute's Jacareí campus' Systems Analysis and Development undergraduate program.
 
 ## Running
 
