@@ -26,7 +26,7 @@ class SignUpScreen:
 
     def show(self):
         """Define o conteúdo do container usando funções pré-definidas (ver scaffolder.py)"""
-        self.title = make_title("Binary Visual Converter")
+        self.title = make_title("Sign up")
         self.username_field = make_text_field("User")
         self.password_field = make_password_field("Password")
         self.password_verification_field = make_password_field("Confirm Password")

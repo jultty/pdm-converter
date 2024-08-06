@@ -46,6 +46,23 @@ def make_text_field(label):
         autofocus = True,
     )
 
+def make_output_field():
+    """Retorna um campo de texto somente leitura
+
+    Argumentos:
+    label -- Texto para identificação do campo pela pessoa usuária
+    """
+    return ft.TextField(
+        width = 300,
+        read_only = False,
+        disabled = False,
+        color = ft.colors.WHITE,
+        border_color = ft.colors.WHITE,
+        label_style = ft.TextStyle(color="#ffffff"),
+        helper_style = ft.TextStyle(color="#ffffff"),
+        hint_style = ft.TextStyle(color="#888888"),
+    )
+
 def make_password_field(label):
     """Retorna um campo de senha com botão para exibir o conteúdo
 
