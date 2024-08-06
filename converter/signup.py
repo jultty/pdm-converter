@@ -11,9 +11,13 @@ class SignUpScreen:
     def handle_signup(self, _):
         username = self.username_field.value
         password = self.password_field.value
+        password_verification = self.password_verification_field.value
 
         if username and password:
-            self.db.add_user(username, password)
+            if password == password_verification:
+                self.db.add_user(username, password)
+            else:
+                self.page.overlay.append(ft.SnackBar(ft.Text("Passwords don't match.")))
         else:
             self.page.overlay.append(ft.SnackBar(ft.Text("Please fill all fields.")))
 

@@ -18,10 +18,10 @@ class LoginScreen:
         username = self.username_field.value
         password = self.password_field.value
 
-        db_password = "TODO"
+        db_password = self.db.get_password(username)
 
-        print("input password: ", password)
-        print("db password: ", db_password)
+        print("input password:", password)
+        print("db password:", db_password)
         if password == db_password:
             go(self.page, "home")
         else:

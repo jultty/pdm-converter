@@ -20,5 +20,12 @@ class Database:
         self.cursor.execute("INSERT INTO users(username, password) VALUES (?,?)", (username, password))
         self.conn.commit()
 
+    def get_password(self, username):
+        query = f"SELECT password FROM users WHERE username = '{username}';"
+        print("Executing:", query)
+        queried_password = self.cursor.execute(query)
+        return queried_password.fetchone()[0]
+
+
     def close(self):
         self.conn.close()
