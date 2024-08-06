@@ -2,3 +2,5 @@
 .pytest_cache
 .python-version
 .venv
+*.db
+__pycache__

@@ -1,6 +1,16 @@
 import flet as ft
 
-def main(page: ft.Page):
-    page.add(ft.Text("Hello, Flet"))
+from converter.router import go
 
-ft.app(main)
+def main(page: ft.Page):
+    """
+    Função principal
+    Serve como ponto de entrada da aplicação
+
+    Argumentos:
+    page: Página atual (suprido automaticamente pelo Flet)
+    """
+
+    go(page, "login")
+
+ft.app(target=main)
